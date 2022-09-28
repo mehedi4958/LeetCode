@@ -6,7 +6,7 @@ void main() {
    * LeetCode doesn't accept the solution
    * as Time Limit Exceeds.
    * However this is either due to Dart being slow or
-   * any kind of LeetCode issue
+   * any kind of LeetCode issue as Dart is recently introduced in LeetCode
   */
 
 bool isPalindrome(int x) {
