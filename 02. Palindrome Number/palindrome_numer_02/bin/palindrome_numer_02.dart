@@ -1,5 +1,5 @@
 void main() {
-  print(isPalindrome(121));
+  isPalindrome(1221);
 }
 
 /*
@@ -10,10 +10,15 @@ void main() {
   */
 
 bool isPalindrome(int x) {
+  /// cancel out any negative, divisible by 10, and 0;
   if (x < 0 || (x % 10 == 0 && x != 0)) {
     return false;
   }
+
   int revNum = 0;
+
+  /// reverses digits up to half of x and compares it to other half
+  /// reversing half of 1221 gives 21 which is equal to the next half 21
   while (x > revNum) {
     revNum = revNum * 10 + x % 10;
     x = x ~/ 10;
